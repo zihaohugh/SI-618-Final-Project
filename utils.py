@@ -56,7 +56,7 @@ def plot_geomap(df, col, task_name, by_state = True,
     print(f'map boundary = {bbox}')
 
     fig, ax = plt.subplots(figsize=(12,7))
-    plt.title(f"{task_name} Across US")
+    plt.title(f"US Regional Distribution on {task_name}")
     # Define the projection, scale, the corners of the map, and the resolution.
     m = Basemap(projection='merc',llcrnrlat=bbox[0],urcrnrlat=bbox[1],\
                 llcrnrlon=bbox[2],urcrnrlon=bbox[3],lat_ts=10,resolution='i')
